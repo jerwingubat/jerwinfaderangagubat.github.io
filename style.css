@@ -1,0 +1,416 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.jpg");
+    background-size:cover;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+  }
+  .container {
+    height: auto;
+    overflow-y: auto;
+  }
+  h1.name {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 35px;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-bottom: 1px;
+  }
+  .basicinfo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-left: auto;
+    
+  }
+  .basicinfo img {
+    width: 30vh;
+    height: 30vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    border-radius: 50%;
+  }
+  .contact-details
+  {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+  .contact-details p
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 4vh;
+    margin-top:1px;
+    margin-bottom: 1px;
+  }
+  .personal-skills
+  {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 1px;
+  }
+  .contact-details .personal-skills p
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top:1px;
+    margin-bottom: 1px;
+  }
+  h1.personal-skills-title
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 1px;
+    margin-left: 2vh;
+    margin-bottom: 1px;
+  }
+  .sample-projects
+  {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin-top: 1px;
+    margin-left:20vh;
+  }
+  h1.sample-projects-title
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  .sample-projects-items p
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 13px;
+    margin: 10px 0;
+    margin-top:4vh;
+  }
+  .basicinfo .sweetrack-logo {
+    width: 9vh;
+    height: 9vh;
+    margin-left: 20px;
+    border-radius: 30%;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+  }
+  .sweetrack-logo:hover
+  {
+    transform: scale(1.2);
+  }
+  .sample-projects-items
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr); 
+    grid-gap: 1px;
+  }
+  .line
+  {
+    background-color: #CDC2AE;
+    margin-top: 5px;
+    width: auto;
+    height: 5px;
+  }
+  .tools-skills
+  {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .tools 
+  {
+    height: fit-content;
+    width:fit-content;
+    margin-top: 3vh;
+    margin-left: 40vh;
+    background-color: transparent;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+    animation: slide-in 1s ease-in-out forwards, slide-out 1s ease-in-out forwards;
+    animation-fill-mode: both;
+  }
+  @keyframes slide-in {
+    from {
+        transform: translateX(0vh);
+    }
+    to {
+        transform: translateX(-40vh);
+    }
+  }
+  @keyframes slide-out{
+    from {
+        transform: translateX(-40vh);
+    }
+    to {
+        transform: translateX(0vh);
+    }
+  }
+  h1.tools-title
+  {
+    color: #C2DEDC;
+    text-align: left;
+    font-size: 25px;
+    margin-left: -6vh;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  .tools ul {
+    list-style-type:circle;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  .tools ul li {
+    color: #C2DEDC; 
+    font-size: 18px
+  }
+  .technical-skills
+  {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 3vh;
+    margin-left: 65vh;
+    background-color: transparent;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+    animation: slide-in-technical 1s ease-in-out forwards, slide-out-technical 1s ease-in-out forwards;
+    animation-fill-mode: both;
+  }
+
+  @keyframes slide-in-technical {
+    from {
+        transform: translateX(-40vh);
+    }
+    to {
+        transform: translateX(-0vh);
+    }
+  }
+
+  @keyframes slide-out-technical{
+    from {
+        transform: translateX(0vh);
+    }
+    to {
+        transform: translateX(-40vh);
+    }
+  }
+
+  h1.technical-skills-title
+  {
+    color: #C2DEDC;
+    text-align: left;
+    margin-left: 15vh;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  .technical-skills ul {
+    list-style-type: circle;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  .technical-skills ul li {
+    color: #C2DEDC; 
+    font-size: 18px
+  }
+  .trainings-webinars-container
+  {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .trainings-webinars {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 3vh;
+    margin-left: 45vh;
+    background-color: transparent;
+    opacity: 0; /* Start with opacity 0 to hide the element */
+    transform: translateY(100%); /* Start position: move the element down */
+    transition: opacity 1s cubic-bezier(0.5, 0, 0.1, 1),
+                transform 1s cubic-bezier(0.5, 0, 0.1, 1);
+    animation: slide-in 1s forwards; /* Start the slide-in animation */
+    animation-delay: 1s; /* Delay the animation to allow time for Intersection Observer */
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  h1.trainings-webinars-title {
+    color: #C2DEDC;
+    text-align: left;
+    margin-left: 25vh;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  
+  .trainings-webinars ul {
+    list-style-type: circle;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  
+  .trainings-webinars ul li {
+    color: #C2DEDC; 
+    font-size: 18px;
+  }
+  .education-container
+  {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .education {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 3vh;
+    margin-left: 48vh;
+    background-color: transparent;
+  }
+  
+  h1.education-title {
+    color: #C2DEDC;
+    text-align: left;
+    margin-left: 20vh;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  
+  .education ul {
+    list-style-type: circle;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  
+  .education ul li {
+    color: #C2DEDC; 
+    font-size: 18px;
+  }
+  .experiences-container
+  {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .experiences {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 3vh;
+    margin-left: 65vh;
+    background-color: transparent;
+  }
+  
+  h1.experiences-title {
+    color: #C2DEDC;
+    text-align: center;
+    margin-left: 1px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  
+  .experiences ul {
+    list-style-type: circle;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 5px; 
+  }
+  
+  .experiences ul li {
+    color: #C2DEDC; 
+    font-size: 18px;
+  }
+  
+
+  .accounts-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    flex-direction: row;
+    margin-bottom: 1vh;
+  }
+  .accounts {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 3vh;
+    background-color: transparent;
+  }
+  
+  .accounts .instagram-logo {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 30%;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+  }
+  .instagram-logo:hover
+  {
+    transform: scale(1.2);
+  }
+  .accounts .facebook-logo {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 5vh;
+    border-radius: 30%;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+  }
+  .facebook-logo:hover
+  {
+    transform: scale(1.2);
+  }
+  .accounts .twitter-logo {
+    width: 7vh;
+    height: 7vh;
+    margin-left: 5vh;
+    border-radius: 30%;
+    transition: transform 0.4s cubic-bezier(0.5, 0, 0.1, 1);
+    transform-origin: center center;
+  }
+  .twitter-logo:hover
+  {
+    transform: scale(1.2);
+  }
